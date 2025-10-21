@@ -1,0 +1,16 @@
+* {
+    font-family: "Poppins";
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.top-section{
+    margin: 25px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom:15px;
+    border-bottom: 1px solid grey;
+}

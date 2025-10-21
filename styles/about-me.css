@@ -1,0 +1,101 @@
+.aboutme-title{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+
+    margin-top: 100px;
+    margin-left:80px ;
+}
+
+.ios-container{
+    background-color: #2d2d2d;
+    width: 1320px;
+    height: 400px;
+    margin-top: 35px;
+    /* margin-left:80px; */
+    border-radius: 15px;
+}
+
+.buttons{
+    display: flex;
+    gap: 12px;
+    margin-left: 25px;
+    padding-top: 15px;
+}
+
+.red-button{
+    width: 15px;
+    height: 15px;
+    background-color: #ff3b30;
+    border-radius: 40px;
+    border-color: none;
+    cursor: pointer;
+}
+
+.yellow-button{
+    width: 15px;
+    height: 15px;
+    background-color: #ffcc00;
+    border-radius: 40px;
+    border-color: none;
+    cursor: pointer;
+}
+
+.green-button{
+    width: 15px;
+    height: 15px;
+    background-color: #34c759;
+    border-radius: 40px;
+    border-color: none;
+    cursor: pointer;
+}
+
+.line{
+    margin-top: 12px;
+    margin-left: 25px;
+    height: 1px;
+    width: 1240px;
+    background-color: rgb(7, 15, 43);
+}
+
+.aboutme-text{
+    font-family: "Roboto Mono", serif;
+    font-weight: 90;
+    font-size: 1.25rem;
+    padding-left: 25px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.aboutme-context span{
+        display: block;
+        width: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: .15em solid white;
+        animation: 
+            typing 5s forwards,
+            cursor .2s steps(30,end) infinite alternate;
+}
+
+.aboutme-context span:nth-child(1){
+    animation-delay: 0s;
+}
+
+.aboutme-context span:nth-child(2){
+    animation-delay: 2s;
+}
+
+@keyframes cursor {
+    from, to{border-color: transparent;}
+    50%{ border-color: white;}
+}
+
+@keyframes typing {
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
