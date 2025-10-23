@@ -3,14 +3,38 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: grey ;
 }
 
+body {
+    min-height: 100vh;          
+    background-image: url("../thumbnails/homepagebg.jpg");
+    background-size: auto;             
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-color: #000;           
+  }
 .top-section{
-    margin: 25px 200px;
+    display: flex;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    background-color: black;
+    opacity: 0.75;
+}
+.top-left{
+ flex: 0.5;
+}
+.top-mid{
+    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom:15px;
-    border-bottom: 1px solid grey;
+    font-size: 14px;
+    flex: 1;
+}
+.top-right{
+    flex: 0.5;
+}
+
+.home-icon{
+    cursor: pointer; 
 }
