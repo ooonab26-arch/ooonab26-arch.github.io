@@ -19,6 +19,11 @@ function checkTime(i) {
   }
 document.addEventListener('DOMContentLoaded', clock);
 
+// On click fro resume 
+const resume_button = document.getElementById('res-button')
+resume_button.addEventListener('click', function(){
+    alert("Thank you for visiting, more features coming soon!")
+});
 
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";

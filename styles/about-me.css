@@ -82,16 +82,24 @@
         overflow: hidden;
         border-right: .15em solid white;
         animation: 
-            typing 5s forwards,
+            typing 2.5s forwards,
             cursor .2s steps(30,end) infinite alternate;
 }
 
 .aboutme-context span:nth-child(1){
     animation-delay: 0s;
 }
-
 .aboutme-context span:nth-child(2){
-    animation-delay: 2s;
+    animation-delay: 3s;
+}
+.aboutme-context span:nth-child(3){
+    animation-delay: 6s;
+}
+.aboutme-context span:nth-child(4){
+    animation-delay: 9s;
+}
+.aboutme-context span:nth-child(5){
+    animation-delay: 12s;
 }
 
 @keyframes cursor {
