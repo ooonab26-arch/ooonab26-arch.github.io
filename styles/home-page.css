@@ -79,13 +79,11 @@ html {
 
 .top-right{
     flex: 0.5;
-    flex: 0.5;
     padding: 20px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     font-size: 14px;
-    flex: 0.5;
 }
 
 .resume-button{
