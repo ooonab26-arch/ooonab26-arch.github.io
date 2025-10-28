@@ -9,23 +9,49 @@
     <!--Style sheets -->
     <link rel="stylesheet" href="styles/home-page.css">
     <link rel="stylesheet" href="styles/about-me.css">
+    <link rel="stylesheet" href="styles/skills-section.css">
 </head>
 <body>
     <div class = "top-section">
-        <div class = "top-left"> </div>
-        <div class = "top-mid">
-            <div class = "home-icon"> Home  </div>
-            <div class = "home-icon"> About Me </div>
-            <div class = "home-icon"> Mini Games  </div>
-            <div class = "home-icon"> Contact </div>
-            <div class = "home-icon"> Resume </div>
+        <div class = "top-left">
+            <div class="home-icon"> Tony Onabolu </div>
         </div>
-        <div class = "top-right"> </div>
-        
+        <div class = "top-mid">
+            <a href = "#home-page"> <div class = "home-icon"> Home</div> </a>
+            <a href = "#am-page"> <div class = "home-icon"> About Me </div> </a>
+            <a href = "#am-page"> <div class = "home-icon"> Projects </div> </a>
+            <a href = "#am-page"> <div class = "home-icon"> Contact </div> </a>
+            <button class = "resume-button"> Resume </button>
+        </div>
+        <div class = "top-right">
+            <div class="home-icon"> Date and Time </div>
+        </div>      
+    </div>
+
+    <!--Icons with links to my linkedin and Github-->
+    <div class = "bottom-icon">
+        <div class ="icon-container">
+            <img  class="icons" src="thumbnails/github.png" alt="icon1">
+        </div>
+        <div class ="icon-container">
+            <a href="https://www.linkedin.com/in/olurinfe-onabolu-2386a5234/" target="_blank">
+                <img  class="icons" src="thumbnails/linkedin.png" alt="icon1">
+            </a>
+        </div>
+    </div>
+
+    <!--Text on Home Page-->
+    <div id="home-page"></div>
+    <div class="text-name"> 
+        <span class= "intro-content"> Hi </span>
+        <span class= "intro-content"> I'm </span>
+        <span class= "intro-content"> Tony </span>
+        <span class= "intro-content"> Onabolu  </span>
+        <div class = "context-one"> Innovator in finance and technology</div>
     </div>
 
     <!-- About me page  -->
-    <!-- <div class="aboutme-title" id="am-page">
+    <div class="aboutme-title" id="am-page">
         <div class="Text-AB"> About Me </div> 
         <div class="ios-container">
             <div class="buttons">
@@ -38,11 +64,105 @@
                 <span>//</span>
                 <br>
                 <div class="aboutme-context"> 
-                    <span> Hello I'm Tony</span>
-                    <span> I am a rising senior at Colby College double majoring in  </span>
+                    <span> Hello, I'm Tony!</span>
+                    <span> I am a senior at Colby College double majoring in Economics and Computer Science. </span>
+                    <span> Dedicated to innovation in finance and technology with a personal interest in business.</span>
+                    <span> During the course of my college career I have </span>
                 </div>
                 <span>//</span>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <!--skill set scroll wheel -->
+    <div class = "skillset">
+        <div class = "text-skillset"> Skill Set </div>
+        <div class="carousel">
+            <div class = "group">
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/front-icon-removebg-preview.png" alt="icon1">
+                    <div class = "skill-header"> Frontend Development </div>              
+                    <li class = "skill-text"> HTML </li>
+                    <li class = "skill-text"> CSS </li>
+                    <li class = "skill-text"> JavaScript </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/backend-icon.png" alt="icon1">
+                    <div class = "skill-header"> Backend Development </div>              
+                    <li class = "skill-text"> Python </li>
+                    <li class = "skill-text"> Java </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/analysis-icon.png" alt="icon1">
+                    <div class = "skill-header"> Data Analyzation </div>              
+                    <li class = "skill-text"> Stata </li>
+                    <li class = "skill-text"> R Studio </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/certification-icon.png" alt="icon1">
+                    <div class = "skill-header"> Certifications</div>              
+                    <li class = "skill-text"> Wall Street: Financial Statement & DCF Modeling  </li>
+                    <li class = "skill-text"> AHA: Base Life Support</li>
+                    <li class = "skill-text"> Microsoft: Microsoft Office Specialist </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/award-icon.png" alt="icon1">
+                    <div class = "skill-header"> Honors </div>              
+                    <li class = "skill-text"> Posse Foundation Scholarship </li>
+                    <li class = "skill-text"> DEI Emerging Leader Award</li>
+                    <li class = "skill-text"> Ideation and Expand Grant  </li>
+                </div>
+            </div>
+            <div class = "group">
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/front-icon-removebg-preview.png" alt="icon1">
+                    <div class = "skill-header"> Frontend Development </div>              
+                    <li class = "skill-text"> HTML </li>
+                    <li class = "skill-text"> CSS </li>
+                    <li class = "skill-text"> JavaScript </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/backend-icon.png" alt="icon1">
+                    <div class = "skill-header"> Backend Development </div>              
+                    <li class = "skill-text"> Python </li>
+                    <li class = "skill-text"> Java </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/analysis-icon.png" alt="icon1">
+                    <div class = "skill-header"> Data Analyzation </div>              
+                    <li class = "skill-text"> Stata </li>
+                    <li class = "skill-text"> R Studio </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/certification-icon.png" alt="icon1">
+                    <div class = "skill-header"> Certifications</div>              
+                    <li class = "skill-text"> Wall Street Prep: Financial Statement & DCF Modeling  </li>
+                    <li class = "skill-text"> American Heart Association: Base Life Support</li>
+                    <li class = "skill-text"> Microsoft: Microsoft Office Specialist - Associates </li>
+                </div>
+                <div class="card">
+                    <img  class="skill-icon" src="thumbnails/award-icon.png" alt="icon1">
+                    <div class = "skill-header"> Honors </div>              
+                    <li class = "skill-text"> Posse Foundation Scholarship </li>
+                    <li class = "skill-text"> DEI Emerging Leader Award</li>
+                    <li class = "skill-text"> Ideation and Expand Grant  </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Mini Game-->
+    <div class = "game-section" id="game-page">
+        <div class="text-mg"> Projects </div>
+
+    </div>
+    <!--Contact-->
+    <div class = "contact-section" id="contact-page">
+        <div class="text-contact"> Contact </div>
+        <div id = "3d-container"></div>
+
+    </div>
+    <script type="module" src="web.js"></script>
+
+
 </body>
