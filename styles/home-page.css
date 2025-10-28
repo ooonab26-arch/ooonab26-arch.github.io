@@ -10,31 +10,153 @@ body {
     min-height: 100vh;          
     background-image: url("../thumbnails/homepagebg.jpg");
     background-size: auto;             
-    background-position: 50% 20%;
+    background-position: 50% 2%;
     background-repeat: no-repeat;
-    background-color: #000;           
+    background-color: #070806;          
   }
+
+  a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .top-section{
+    position: sticky;
     display: flex;
     border-bottom: 1px solid rgb(50, 50, 50);
-    background-color: black;
-    opacity: 0.75;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 100;
+    top: 0;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
+
 .top-left{
- flex: 0.5;
-}
-.top-mid{
-    padding: 25px;
+    flex: 0.5;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    flex: 1;
+    flex: 0.5;
 }
-.top-right{
+.top-mid{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
     flex: 0.5;
 }
 
 .home-icon{
+    font-weight: 400;
+    border-bottom: 0px;
+    position: relative;
+    transition: color 0.5s border-bottom 0.5s;
+}
+
+.home-icon::after{
+    content: " ";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d11f23;
+    transform: scaleX(0);
+    transform-origin:  right;
+    transition: transform .425s ease-in-out;
+}
+
+.home-icon:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.top-right{
+    flex: 0.5;
+    flex: 0.5;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 14px;
+    flex: 0.5;
+}
+
+.resume-button{
+    position:relative;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-style: "Poppins";
+    border: none;
+    color:grey;
+    padding: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 0 1em 0.1em ;
+
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover{
+    background-color: #d11f23 ;
+    color:white;
+    box-shadow: 0 0 1em 0.1em rgba(209,31,35,0.6);
+}
+
+.resume-button:active{
+    background-color: #94090b ;
+    color:white;
+    box-shadow: 0 0 1em 0.1em rgba(209,31,35,0.6);
+}
+
+.home-icon{
     cursor: pointer; 
+}
+
+.home-icon:hover{
+    color: white;
+}
+.text-name{
+    margin:300px;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    /* overflow: hidden; */
+}
+
+.intro-content{
+    color: rgb(244, 235, 235);
+    font-size:80px;
+    font-weight: 800;
+}
+
+.context-one{
+    color: white;
+    font-size: 25px;
+    /* overflow: hidden; */
+}
+
+.bottom-icon{
+    position: fixed;
+    color: rgb(207, 207, 48);
+    margin-top: 675px;
+
+}
+.icons{
+    margin: 10px;
+    width: 35px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.icons:hover{
+    filter: invert(0.8);
 }

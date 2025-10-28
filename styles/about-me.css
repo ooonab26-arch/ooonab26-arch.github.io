@@ -2,20 +2,25 @@
     color: white;
     font-weight: bold;
     font-size: 3rem;
-    margin-top: 1px;
+    padding-top: 150px;
+    margin-top: 20px;
     margin-left:80px ;
+    margin-bottom: 100px;
 }
 
 .Text-AB{
     color: white;
+    font-weight: 700;
+    margin-left: 39%;
 }
 .ios-container{
-    background-color: #202020;
+    background-color: #141414;
     width: 1320px;
     height: 400px;
     margin-top: 35px;
     /* margin-left:80px; */
     border-radius: 15px;
+    /* box-shadow: 0 0 0.1em 0.1em rgb(187, 185, 185); */
 }
 
 .buttons{
@@ -61,7 +66,7 @@
 }
 
 .aboutme-text{
-    font-family: "Roboto Mono", serif;
+    /* font-family: "Roboto Mono", serif; */
     font-weight: 90;
     font-size: 1.25rem;
     padding-left: 25px;
@@ -101,4 +106,74 @@
     to{
         width: 80%;
     }
+}
+
+.skillset{
+    margin-bottom: 150px;
+}
+
+.text-skillset{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left:45% ;
+    margin-bottom: 100px;
+}
+
+.carousel{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    --speed:15s;
+    animation: spin var(--speed) infinite linear;
+    padding-right: 1em;
+}
+
+
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background-color: #141414;;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin{
+    from{
+        translate:0;
+    }
+    to{
+        translate: -100%;
+    }
+}
+
+.text-mg{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left:41% ;
+    margin-bottom: 100px;
+}
+
+.text-contact{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left:43% ;
+    margin-bottom: 100px;
 }
