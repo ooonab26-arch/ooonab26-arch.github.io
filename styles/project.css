@@ -1,0 +1,43 @@
+.project-section{
+    padding-top: 100px;
+    /* background-color: aquamarine; */
+    margin-bottom: 275px;
+}
+
+.text-project{
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-left:45% ;
+    margin-bottom: 100px;
+}
+
+.ind_project_containter{
+    display: flex;
+    margin: 50px;
+}
+
+.project-text{
+    flex: 0.5;
+}
+
+.project-img{
+    flex: 0.5;
+}
+
+.project-name{
+    /* display: block; */
+    color: white;
+    width: 0;
+    white-space: nowrap;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.project-description{
+    color: white;
+    width: 0;
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 15px;
+}

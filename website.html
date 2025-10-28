@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="styles/home-page.css">
     <link rel="stylesheet" href="styles/about-me.css">
     <link rel="stylesheet" href="styles/skills-section.css">
+    <link rel="stylesheet" href="styles/project.css">
 </head>
 <body>
+    <script type="module" src="./web.js"></script>
     <div class = "top-section">
         <div class = "top-left">
             <div class="home-icon"> Tony Onabolu </div>
@@ -19,12 +21,12 @@
         <div class = "top-mid">
             <a href = "#home-page"> <div class = "home-icon"> Home</div> </a>
             <a href = "#am-page"> <div class = "home-icon"> About Me </div> </a>
-            <a href = "#am-page"> <div class = "home-icon"> Projects </div> </a>
-            <a href = "#am-page"> <div class = "home-icon"> Contact </div> </a>
+            <a href = "#project-page"> <div class = "home-icon"> Projects </div> </a>
+            <a href = "#contact-page"> <div class = "home-icon"> Contact </div> </a>
             <button class = "resume-button"> Resume </button>
         </div>
         <div class = "top-right">
-            <div class="home-icon"> Date and Time </div>
+            <div id="web-clock" class="home-icon"> 00:00:00 </div>
         </div>      
     </div>
 
@@ -136,8 +138,8 @@
                 <div class="card">
                     <img  class="skill-icon" src="thumbnails/certification-icon.png" alt="icon1">
                     <div class = "skill-header"> Certifications</div>              
-                    <li class = "skill-text"> Wall Street Prep: Financial Statement & DCF Modeling  </li>
-                    <li class = "skill-text"> American Heart Association: Base Life Support</li>
+                    <li class = "skill-text"> Wall Street: Financial Statement & DCF Modeling  </li>
+                    <li class = "skill-text"> AHA: Base Life Support</li>
                     <li class = "skill-text"> Microsoft: Microsoft Office Specialist - Associates </li>
                 </div>
                 <div class="card">
@@ -151,18 +153,50 @@
         </div>
     </div>
 
-    <!--Mini Game-->
-    <div class = "game-section" id="game-page">
-        <div class="text-mg"> Projects </div>
-
+    <!--Projects-->
+    <div class = "project-section" id="project-page">
+        <div class="text-project"> Projects </div>
+        <div class = "ind_project_containter">
+            <div class = "project-text">
+                <div class="project-name"> Project </div>
+                <div class="project-description"> Text about Project</div>
+            </div>
+            <div class = "project-img" style = "background-color: aqua;"> image </div>
+        </div>
+        <div class = "ind_project_containter">
+            <div class = "project-img" style = "background-color: aqua;"> image </div>
+            <div class = "project-text">
+                <div class="project-name"> Project </div>
+                <div class="project-description"> Text about Project</div>
+            </div>
+        </div>
+        <div class = "ind_project_containter">
+            <div class = "project-text">
+                <div class="project-name"> Project </div>
+                <div class="project-description"> Text about Project</div>
+            </div>
+            <div class = "project-img" style = "background-color: aqua;"> image </div>
+        </div>
+        
     </div>
     <!--Contact-->
     <div class = "contact-section" id="contact-page">
         <div class="text-contact"> Contact </div>
-        <div id = "3d-container"></div>
-
+        <div class = "contact_content">
+            <div class = "content_info"> 
+                <div class = "text-lets-connect"> Let's Connect!</div>
+                <div class = "button-container">
+                    <button class = "contact-button"> Email</button>
+                    <button class = "contact-button"> Linkedin</button>
+                    <button class = "contact-button"> GitHub</button>
+                </div>
+                
+            </div>
+            <div style = "background-color: #141414;"id = "container3D"></div>
+        </div>
+        
     </div>
-    <script type="module" src="web.js"></script>
+    
 
 
 </body>
